@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "rn-query-firebase",
+    "slug": "rn-query-firebase",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "rn-query-firebase"
+}
