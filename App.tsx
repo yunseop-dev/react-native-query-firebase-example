@@ -2,7 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query'
 import Menu from './src/screens/Menu';
-import Test from './src/screens/Test';
+import Database from './src/screens/Database';
+import Login from './src/screens/Login';
+import LoggedIn from './src/screens/LoggedIn';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -16,7 +18,9 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Menu" component={Menu} />
-          <Stack.Screen name="Database" component={Test} />
+          <Stack.Screen name="Database" component={Database} />
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="LoggedIn" component={LoggedIn} />
         </Stack.Navigator>
       </NavigationContainer>
     </QueryClientProvider>

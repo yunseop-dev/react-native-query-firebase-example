@@ -7,7 +7,7 @@ import _ from 'lodash';
 
 const sampleTexts = ["React", "Native", "Hello", "World"];
 
-export default function Test() {
+export default function Database() {
     const reference = database().ref('/test');
     const setMutation = useDatabaseSetMutation(reference, {}, {
         onSuccess(data) {
@@ -18,7 +18,7 @@ export default function Test() {
         }
     });
 
-    const updateMutation = useDatabaseUpdateMutation(reference, {}, {
+    const updateMutation = useDatabaseUpdateMutation(reference, {
         onSuccess(data) {
             console.log(data);
         },
@@ -33,7 +33,7 @@ export default function Test() {
         }
 
         return test;
-    });
+    }, {});
 
     const removeMutation = useDatabaseRemoveMutation(reference);
 
